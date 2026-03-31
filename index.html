@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Freelance Web Developer for Hire | Alizaib – Full Stack Developer</title>
+  <meta name="description"
+    content="Hire Alizaib – a trusted full stack freelance web developer specializing in Telegram bots, web apps, AI integrations & custom dashboards. Starting at $10/hr. Available now." />
+  <meta name="keywords"
+    content="freelance web developer, hire freelance web developer, full stack freelance web developer, telegram bot developer, web developer for hire, freelance developer Pakistan" />
+  <meta name="author" content="Alizaib – aliwebdeveloper.com" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aliwebdeveloper.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Freelance Web Developer for Hire | Alizaib" />
+  <meta property="og:description"
+    content="Hire a full stack freelance web developer. Telegram bots, web apps, AI tools. Starting at $10/hr." />
+  <meta property="og:url" content="https://aliwebdeveloper.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Freelance Web Developer | Alizaib" />
+  <meta name="twitter:description"
+    content="Full stack freelance web developer. Telegram bots, AI, dashboards. Hire now." />
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Alizaib","jobTitle":"Freelance Web Developer","url":"https://aliwebdeveloper.com","sameAs":["https://www.fiverr.com/sellers/alizaibwebdev/","https://aziqdev.com","https://wa.me/923208757582","https://t.me/aziqdev"],"knowsAbout":["Web Development","Telegram Bot Development","AI Integration","Full Stack Development"],"offers":{"@type":"Offer","price":"10","priceCurrency":"USD","description":"Freelance web development services starting at $10/hr"}}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080b10;
+      --bg2: #0d1117;
+      --bg3: #111820;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #00e5ff;
+      --accent2: #7c3aed;
+      --accent3: #10b981;
+      --text: #e2e8f0;
+      --muted: #8892a4;
+      --card: rgba(255, 255, 255, 0.03);
+      --glow: 0 0 40px rgba(0, 229, 255, 0.15);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      padding: 18px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      background: rgba(8, 11, 16, 0.88);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      background: var(--accent) !important;
+      color: #000 !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 65px;
+      left: 0;
+      right: 0;
+      background: rgba(8, 11, 16, 0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      z-index: 199;
+      padding: 1.5rem 5%;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .mobile-menu a:hover {
+      color: var(--accent);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 65% 40%, rgba(0, 229, 255, 0.07) 0%, transparent 70%), radial-gradient(ellipse 50% 50% at 20% 80%, rgba(124, 58, 237, 0.07) 0%, transparent 60%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.22);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      font-family: 'DM Mono', monospace;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent3);
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .5;
+        transform: scale(.8);
+      }
+    }
+
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.4rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: .92rem;
+      text-decoration: none;
+      transition: all .2s;
+      box-shadow: 0 0 30px rgba(0, 229, 255, .3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(0, 229, 255, .5);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: .92rem;
+      text-decoration: none;
+      background: var(--card);
+      transition: all .2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .stat-num span {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: .78rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .hero-tags {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1;
+    }
+
+    .htag {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-family: 'DM Mono', monospace;
+      font-size: .75rem;
+      color: var(--muted);
+      transition: all .3s;
+    }
+
+    .htag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateX(-5px);
+    }
+
+    .htag strong {
+      color: var(--accent3);
+      display: block;
+      font-size: .65rem;
+      margin-bottom: 2px;
+    }
+
+    /* ── SECTIONS COMMON ── */
+    section {
+      padding: 100px 5%;
+    }
+
+    .sec-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .73rem;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .sec-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: .9rem;
+    }
+
+    .sec-sub {
+      color: var(--muted);
+      max-width: 550px;
+      margin-bottom: 3.5rem;
+      font-size: .97rem;
+    }
+
+    .bg2 {
+      background: var(--bg2);
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .about-text strong {
+      color: var(--text);
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 229, 255, 0.06);
+      border: 1px solid rgba(0, 229, 255, 0.18);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: .8rem;
+      font-weight: 500;
+    }
+
+    .about-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, rgba(0, 229, 255, .1), transparent);
+      border-radius: 50%;
+    }
+
+    .about-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+
+    .edu-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .edu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .edu-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 229, 255, .1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .edu-info strong {
+      display: block;
+      font-size: .88rem;
+      color: var(--text);
+    }
+
+    .edu-info span {
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transform: scaleX(0);
+      transition: transform .3s;
+    }
+
+    .skill-card:hover {
+      border-color: rgba(0, 229, 255, .3);
+      transform: translateY(-4px);
+    }
+
+    .skill-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .skill-icon {
+      font-size: 2rem;
+      margin-bottom: .9rem;
+    }
+
+    .skill-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: .97rem;
+      font-weight: 700;
+      margin-bottom: .45rem;
+    }
+
+    .skill-card p {
+      font-size: .83rem;
+      color: var(--muted);
+      margin-bottom: .9rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .stag {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3px 9px;
+      font-size: .7rem;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: all .3s;
+    }
+
+    .service-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--glow);
+      transform: translateY(-4px);
+    }
+
+    .svc-num {
+      font-family: 'DM Mono', monospace;
+      font-size: .68rem;
+      color: var(--accent);
+      margin-bottom: .9rem;
+    }
+
+    .service-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: .6rem;
+    }
+
+    .service-card p {
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    /* ── WORK ── */
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 26px;
+    }
+
+    .work-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all .3s;
+    }
+
+    .work-card:hover {
+      border-color: rgba(0, 229, 255, .3);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+    }
+
+    .work-thumb {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.8rem;
+    }
+
+    .wt1 {
+      background: linear-gradient(135deg, #0a1628, #003344);
+    }
+
+    .wt2 {
+      background: linear-gradient(135deg, #0a0a1a, #1a0a2e);
+    }
+
+    .wt3 {
+      background: linear-gradient(135deg, #0a1a0a, #003314);
+    }
+
+    .wt4 {
+      background: linear-gradient(135deg, #1a0a0a, #2e1a00);
+    }
+
+    .work-body {
+      padding: 1.4rem;
+    }
+
+    .work-body h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+    }
+
+    .work-body p {
+      font-size: .83rem;
+      color: var(--muted);
+      margin-bottom: .9rem;
+    }
+
+    .work-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .work-tech span {
+      background: rgba(0, 229, 255, .06);
+      border: 1px solid rgba(0, 229, 255, .15);
+      color: var(--accent);
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: .7rem;
+      font-family: 'DM Mono', monospace;
+    }
+
+    .fiverr-strip {
+      background: linear-gradient(135deg, #1dbf73, #19a463);
+      border-radius: 14px;
+      padding: 1.8rem 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .fiverr-strip h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .fiverr-strip p {
+      color: rgba(255, 255, 255, .82);
+      font-size: .87rem;
+    }
+
+    .btn-fiverr {
+      background: #fff;
+      color: #1dbf73;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all .2s;
+      font-size: .9rem;
+    }
+
+    .btn-fiverr:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    }
+
+    /* ── PRICING ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 22px;
+      max-width: 800px;
+    }
+
+    .price-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      position: relative;
+      transition: all .3s;
+    }
+
+    .price-card.featured {
+      border-color: var(--accent);
+      box-shadow: var(--glow);
+    }
+
+    .price-card.featured::before {
+      content: 'POPULAR';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #000;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 14px;
+      border-radius: 100px;
+    }
+
+    .price-label {
+      font-family: 'DM Mono', monospace;
+      font-size: .72rem;
+      color: var(--muted);
+      margin-bottom: .5rem;
+    }
+
+    .price-amount {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: .4rem;
+    }
+
+    .price-amount span {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .price-card>p {
+      color: var(--muted);
+      font-size: .87rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .price-features {
+      list-style: none;
+      margin-bottom: 1.8rem;
+    }
+
+    .price-features li {
+      font-size: .86rem;
+      color: var(--muted);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .price-features li::before {
+      content: '✓';
+      color: var(--accent3);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 18px;
+    }
+
+    .t-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: all .3s;
+    }
+
+    .t-card:hover {
+      border-color: rgba(0, 229, 255, .2);
+    }
+
+    .stars {
+      color: #fbbf24;
+      font-size: .83rem;
+      margin-bottom: .7rem;
+    }
+
+    .t-card p {
+      font-size: .88rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.2rem;
+    }
+
+    .t-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .t-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .82rem;
+      color: #000;
+      flex-shrink: 0;
+    }
+
+    .t-name {
+      font-size: .83rem;
+      font-weight: 600;
+    }
+
+    .t-loc {
+      font-size: .73rem;
+      color: var(--muted);
+    }
+
+    /* ── BLOG ── */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+      transition: all .3s;
+    }
+
+    .blog-card:hover {
+      border-color: rgba(0, 229, 255, .3);
+      transform: translateY(-4px);
+    }
+
+    .blog-thumb {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .bt1 {
+      background: linear-gradient(135deg, #0a1628, #002233);
+    }
+
+    .bt2 {
+      background: linear-gradient(135deg, #0a0a1a, #150a2e);
+    }
+
+    .bt3 {
+      background: linear-gradient(135deg, #0a1a0a, #002211);
+    }
+
+    .bt4 {
+      background: linear-gradient(135deg, #1a0f00, #2e1a00);
+    }
+
+    .bt5 {
+      background: linear-gradient(135deg, #0a1010, #001a1a);
+    }
+
+    .blog-body {
+      padding: 1.2rem;
+    }
+
+    .blog-cat {
+      font-family: 'DM Mono', monospace;
+      font-size: .65rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: .4rem;
+    }
+
+    .blog-body h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: .4rem;
+      line-height: 1.35;
+    }
+
+    .blog-body p {
+      font-size: .82rem;
+      color: var(--muted);
+    }
+
+    /* ── CTA BOX ── */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(0, 229, 255, .05), rgba(124, 58, 237, .05));
+      border: 1px solid rgba(0, 229, 255, .2);
+      border-radius: 24px;
+      padding: 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(0, 229, 255, .1), transparent);
+      border-radius: 50%;
+    }
+
+    .cta-box h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: .9rem;
+      position: relative;
+    }
+
+    .cta-box p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto 2.2rem;
+      position: relative;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 1.8rem;
+    }
+
+    .contact-icon {
+      width: 46px;
+      height: 46px;
+      background: rgba(0, 229, 255, .08);
+      border: 1px solid rgba(0, 229, 255, .2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-info strong {
+      display: block;
+      font-size: .82rem;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .contact-info a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .95rem;
+      transition: color .2s;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: .8rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 11px 14px;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: .9rem;
+      outline: none;
+      transition: border-color .2s;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .form-group select option {
+      background: var(--bg3);
+    }
+
+    .btn-submit {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: .92rem;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      transition: all .2s;
+      box-shadow: 0 0 28px rgba(0, 229, 255, .25);
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(0, 229, 255, .4);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 60px 5% 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: .86rem;
+      margin-top: .9rem;
+      max-width: 270px;
+    }
+
+    .footer-col h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .88rem;
+      margin-bottom: .9rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: .55rem;
+    }
+
+    .footer-col ul a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .84rem;
+      transition: color .2s;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-link {
+      width: 34px;
+      height: 34px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .82rem;
+      transition: all .2s;
+    }
+
+    .social-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:960px) {
+      .hero-tags {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+      }
+    }
+
+    @media(max-width:640px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      section {
+        padding: 70px 5%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .hero {
+        padding: 100px 5% 60px;
+      }
+
+      .hero-stats {
+        gap: 1.8rem;
+      }
+
+      .cta-box {
+        padding: 2.5rem 1.5rem;
+      }
+
+      .fiverr-strip {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="logo">ali<span>dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#work" onclick="closeMenu()">Work</a>
+    <a href="#pricing" onclick="closeMenu()">Pricing</a>
+    <a href="blog/" onclick="closeMenu()">Blog</a>
+    <a href="#contact" onclick="closeMenu()">Hire Me</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <div class="dot"></div> Available for hire &nbsp;·&nbsp; $10/hr
+      </div>
+      <h1>Your <em>Freelance</em><br>Web Developer</h1>
+      <p class="hero-desc">I'm <strong>Alizaib</strong> — a full stack freelance web developer building Telegram bots,
+        web apps, AI-powered tools, and custom dashboards for businesses worldwide. 3+ years · 50+ projects delivered.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">💬 Hire Me Now</a>
+        <a href="#work" class="btn-secondary">🔍 View My Work</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div>
+          <div class="stat-num">15<span>+</span></div>
+          <div class="stat-label">Countries Served</div>
+        </div>
+        <div>
+          <div class="stat-num">5.0<span>⭐</span></div>
+          <div class="stat-label">Fiverr Rating</div>
+        </div>
+        <div>
+          <div class="stat-num">3<span>+ yrs</span></div>
+          <div class="stat-label">Experience</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-tags">
+      <div class="htag"><strong>SPECIALTY</strong>Telegram Bots</div>
+      <div class="htag"><strong>SPECIALTY</strong>AI Integration</div>
+      <div class="htag"><strong>SPECIALTY</strong>Web Apps</div>
+      <div class="htag"><strong>SPECIALTY</strong>Dashboards</div>
+      <div class="htag"><strong>RATE</strong>From $10/hr</div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="sec-label">// About Me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="sec-title">Full Stack <em style="color:var(--accent);font-style:normal">Freelance Web Developer</em>
+          Based in Pakistan</h2>
+        <p>I'm Alizaib, CEO of <strong>aziqdev.com</strong> and a professional full stack freelance web developer with
+          over 3 years of experience. I've been delivering projects on Fiverr since 2023 for clients across the US, UK,
+          Australia, Germany, and 15+ other countries.</p>
+        <p>I have been working on Fiverr since 2023 and have delivered multiple projects for clients in different
+          niches. My main focus is building Telegram bots, websites, and custom dashboards that solve real business
+          problems.</p>
+        <p>I don't rely on templates. Every project is built according to the client's requirements — with attention to
+          performance, security, and long-term usability. I communicate clearly, ask the right questions before
+          starting, and make sure the final solution actually works in real-world use.</p>
+        <div class="badges">
+          <span class="badge">🎓 BSc Computer Science</span>
+          <span class="badge">🏆 Certified PHP Developer</span>
+          <span class="badge">⭐ 5.0 Fiverr Rated</span>
+          <span class="badge">🌍 15+ Countries</span>
+          <span class="badge">🤖 CEO – aziqdev.com</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Education &amp; Credentials</h3>
+        <div class="edu-item">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <strong>Bachelor of Science – Computer Science</strong>
+            <span>Full degree in software &amp; systems development</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">📜</div>
+          <div class="edu-info">
+            <strong>Certified PHP Developer</strong>
+            <span>Professional PHP certification</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">🤖</div>
+          <div class="edu-info">
+            <strong>CEO – aziqdev.com</strong>
+            <span>Telegram bot development company · Since 2022</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">⭐</div>
+          <div class="edu-info">
+            <strong>Top-Rated Fiverr Seller</strong>
+            <span>50+ bots &amp; apps delivered · 5.0 rating · Since 2023</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-icon">🌍</div>
+          <div class="edu-info">
+            <strong>Global Client Base</strong>
+            <span>US, UK, Australia, Canada, Germany &amp; 10+ more countries</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg2">
+    <div class="sec-label">// Technical Skills</div>
+    <h2 class="sec-title">What I Build &amp; How</h2>
+    <p class="sec-sub">As a full stack freelance web developer, I work across the entire stack — from backend APIs to
+      polished frontends and AI integrations.</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <h3>Telegram Bot Development</h3>
+        <p>Custom bots with complex logic, admin panels, inline keyboards, and full automation workflows. Expert-level
+          Telegram Bot API &amp; MTProto knowledge.</p>
+        <div class="skill-tags">
+          <span class="stag">Python</span><span class="stag">Aiogram</span><span class="stag">MTProto</span><span
+            class="stag">Webhooks</span><span class="stag">Bot API</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Full Stack Web Development</h3>
+        <p>End-to-end web applications and websites — from database design to responsive frontend UI. Clean code, fast
+          performance, production ready.</p>
+        <div class="skill-tags">
+          <span class="stag">PHP</span><span class="stag">Node.js</span><span class="stag">HTML/CSS/JS</span><span
+            class="stag">React</span><span class="stag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🧠</div>
+        <h3>AI Integration</h3>
+        <p>GPT-powered chatbots trained on your data, intelligent automation, and AI features built into websites and
+          Telegram bots for real business use.</p>
+        <div class="skill-tags">
+          <span class="stag">OpenAI API</span><span class="stag">Custom GPT</span><span class="stag">NLP</span><span
+            class="stag">Chatbots</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Dashboards &amp; Admin Panels</h3>
+        <p>Custom dashboards for managing users, data, orders, and reports — with role-based access, real-time charts,
+          and clean UI design.</p>
+        <div class="skill-tags">
+          <span class="stag">Chart.js</span><span class="stag">REST APIs</span><span class="stag">MySQL</span><span
+            class="stag">Auth</span><span class="stag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">💳</div>
+        <h3>Payment Integration</h3>
+        <p>Secure payment flows — Telegram Payments API, Stripe, PayPal, and cryptocurrency processors. Subscription
+          management and transaction tracking.</p>
+        <div class="skill-tags">
+          <span class="stag">Stripe</span><span class="stag">PayPal</span><span class="stag">Crypto</span><span
+            class="stag">Telegram Pay</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔗</div>
+        <h3>API &amp; Third-Party Integrations</h3>
+        <p>Seamless connections between bots, websites, and databases. Exchange APIs (Binance, Kraken, Coinbase), CRMs,
+          and third-party services.</p>
+        <div class="skill-tags">
+          <span class="stag">REST</span><span class="stag">Binance API</span><span class="stag">Webhooks</span><span
+            class="stag">MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="sec-label">// Services</div>
+    <h2 class="sec-title">What You Can <em style="color:var(--accent);font-style:normal">Hire Me</em> For</h2>
+    <p class="sec-sub">As your dedicated freelance web developer, I offer end-to-end development services tailored to
+      your business needs — no templates, no shortcuts.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-num">01 —</div>
+        <h3>🤖 Custom Telegram Bot Development</h3>
+        <p>From simple automation to full trading systems and e-commerce bots. Every bot built with clean code,
+          security, and scalability in mind. Including AI-powered bots.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">02 —</div>
+        <h3>🌐 Full Stack Web Development</h3>
+        <p>Modern websites, web apps, and portals using PHP, Node.js, React, and more. Fast, secure, mobile-friendly,
+          and production-ready from day one.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">03 —</div>
+        <h3>🧠 AI-Powered Features</h3>
+        <p>Add AI to your website or Telegram bot. GPT chatbots trained on your specific data for customer support,
+          sales automation, or internal tools.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">04 —</div>
+        <h3>📈 Crypto Trading Bots</h3>
+        <p>Automated trading bots with real-time market signals, Binance/Kraken/Coinbase exchange API connections,
+          stop-loss controls, and risk management features.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">05 —</div>
+        <h3>📊 Admin Panels &amp; Dashboards</h3>
+        <p>Custom dashboards for managing users, data, orders, and reports — with role-based access control, real-time
+          data, and intuitive UI design.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">06 —</div>
+        <h3>💳 Payment System Integration</h3>
+        <p>Stripe, PayPal, Telegram Payments API, and crypto integrations. Subscription management, automated invoicing,
+          and full transaction tracking built in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="bg2">
+    <div class="sec-label">// My Work</div>
+    <h2 class="sec-title">Projects Delivered</h2>
+    <p class="sec-sub">Real projects. Real clients. Every solution is custom-built for specific business requirements —
+      no templates, no copy-paste code.</p>
+    <div class="fiverr-strip">
+      <div>
+        <h3>⭐ See All My Reviews on Fiverr</h3>
+        <p>50+ completed projects · 5.0 rating · Clients from 15+ countries</p>
+      </div>
+      <a href="https://www.fiverr.com/sellers/alizaibwebdev/" target="_blank" rel="noopener" class="btn-fiverr">View
+        Fiverr Profile →</a>
+    </div>
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-thumb wt1">🤖</div>
+        <div class="work-body">
+          <h3>BotWe – Crypto Trading Bot</h3>
+          <p>Advanced Telegram trading bot with real-time market analysis, automated trading signals, price alerts, and
+            multi-exchange integration (Binance, Kraken).</p>
+          <div class="work-tech"><span>Python</span><span>Telegram API</span><span>Binance API</span><span>MySQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb wt2">🧠</div>
+        <div class="work-body">
+          <h3>AI Customer Support Bot</h3>
+          <p>GPT-powered Telegram chatbot trained on a client's product catalog. Handles 80%+ of support queries
+            automatically with human-like responses 24/7.</p>
+          <div class="work-tech"><span>OpenAI</span><span>Telegram API</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb wt3">🛒</div>
+        <div class="work-body">
+          <h3>E-commerce Telegram Store</h3>
+          <p>Full Telegram shop with product catalog, cart, checkout, Stripe payment integration, and an admin panel for
+            order and inventory management.</p>
+          <div class="work-tech"><span>Python</span><span>Stripe</span><span>Telegram Pay</span><span>MySQL</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb wt4">📊</div>
+        <div class="work-body">
+          <h3>Business Analytics Dashboard</h3>
+          <p>Custom web dashboard for tracking sales, users, and business reports — with real-time charts, role-based
+            access control, and CSV export features.</p>
+          <div class="work-tech"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>Chart.js</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="sec-label">// Pricing</div>
+    <h2 class="sec-title">Simple, Transparent Pricing</h2>
+    <p class="sec-sub">Hire me as a freelance web developer per hour — or describe your project and I'll send you a
+      custom quote within 24 hours.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-label">Hourly Rate</div>
+        <div class="price-amount">$10<span>/hr</span></div>
+        <p>Perfect for ongoing work, small tasks, or if you want to get started fast without scoping everything upfront.
+        </p>
+        <ul class="price-features">
+          <li>Pay only for time worked</li>
+          <li>Flexible — start anytime</li>
+          <li>Daily progress updates</li>
+          <li>All task types covered</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <a href="https://wa.me/923208757582?text=Hi%20Alizaib!%20I%20want%20to%20hire%20you%20at%20%2410/hr."
+          target="_blank" class="btn-primary" style="width:100%;justify-content:center;">Hire Per Hour →</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-label">Custom Project</div>
+        <div class="price-amount" style="color:var(--accent)">Custom</div>
+        <p>Have a specific project? Describe it to me and I'll send a detailed quote with full scope and timeline.</p>
+        <ul class="price-features">
+          <li>Fixed price, no surprises</li>
+          <li>Full scope &amp; timeline upfront</li>
+          <li>Milestone-based delivery</li>
+          <li>Full source code included</li>
+          <li>30-day post-launch support</li>
+        </ul>
+        <a href="#contact" class="btn-primary"
+          style="width:100%;justify-content:center;background:var(--accent2);box-shadow:0 0 28px rgba(124,58,237,.3)">Get
+          a Quote →</a>
+      </div>
+    </div>
+    <p style="margin-top:1.8rem;color:var(--muted);font-size:.84rem;">💡 Not sure which fits? <a
+        href="https://wa.me/923208757582" target="_blank" style="color:var(--accent);text-decoration:none;">WhatsApp
+        me</a> — I'll help you figure out the best option for your project.</p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="bg2" id="reviews">
+    <div class="sec-label">// Client Reviews</div>
+    <h2 class="sec-title">What Clients Say</h2>
+    <p class="sec-sub">Real reviews from verified Fiverr clients. <a
+        href="https://www.fiverr.com/sellers/alizaibwebdev/" target="_blank" style="color:var(--accent)">See all reviews
+        →</a></p>
+    <div class="testimonials-grid">
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"Excellent Telegram bot developer who delivered exactly what we needed for our trading platform. The bot
+          integrates perfectly with our exchange APIs and provides real-time alerts."</p>
+        <div class="t-author">
+          <div class="t-avatar">A</div>
+          <div>
+            <div class="t-name">anthonynora46</div>
+            <div class="t-loc">🇺🇸 United States</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"Perfect implementation of Telegram Payments API for our e-commerce bot. Transactions are seamless and the
+          security measures are robust. Highly recommended!"</p>
+        <div class="t-author">
+          <div class="t-avatar">S</div>
+          <div>
+            <div class="t-name">speedmusic767</div>
+            <div class="t-loc">🇦🇺 Australia</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"I am very happy with this project. Ali was amazing to work with and will certainly be using again in the
+          future!! AAA+++"</p>
+        <div class="t-author">
+          <div class="t-avatar">S</div>
+          <div>
+            <div class="t-name">speedmusic767</div>
+            <div class="t-loc">🇦🇺 Australia</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"Great worker, deep understanding of bot making and very fluent in English. Delivered exactly what we needed
+          for our Telegram automation project."</p>
+        <div class="t-author">
+          <div class="t-avatar">S</div>
+          <div>
+            <div class="t-name">Savinoslim</div>
+            <div class="t-loc">🇬🇧 United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ali did NOT disappoint. The time, effort and productivity put into my project was exceptional. Great value
+          and would highly recommend to anyone."</p>
+        <div class="t-author">
+          <div class="t-avatar">T</div>
+          <div>
+            <div class="t-name">ts3_scrape</div>
+            <div class="t-loc">🇨🇦 Canada</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="stars">★★★★★</div>
+        <p>"Professional, fast, and detail-oriented. Alizaib understood exactly what I needed and delivered a clean
+          working solution with clear documentation."</p>
+        <div class="t-author">
+          <div class="t-avatar">M</div>
+          <div>
+            <div class="t-name">Client from Fiverr</div>
+            <div class="t-loc">🇩🇪 Germany</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section id="blog">
+    <div class="sec-label">// Blog &amp; Resources</div>
+    <h2 class="sec-title">Articles &amp; Guides</h2>
+    <p class="sec-sub">Practical guides on Telegram bots, web development, AI, and working with a freelance web
+      developer. <a href="blog/" style="color:var(--accent)">Read all articles →</a></p>
+    <div class="blog-grid">
+      <a href="blog/how-to-hire-freelance-web-developer.html" class="blog-card">
+        <div class="blog-thumb bt1">💡</div>
+        <div class="blog-body">
+          <div class="blog-cat">Hiring</div>
+          <h3>How to Hire a Freelance Web Developer in 2025 Without Getting Burned</h3>
+          <p>What to look for and red flags to avoid.</p>
+        </div>
+      </a>
+      <a href="blog/freelance-web-developer-vs-agency.html" class="blog-card">
+        <div class="blog-thumb bt4">⚖️</div>
+        <div class="blog-body">
+          <div class="blog-cat">Hiring</div>
+          <h3>Freelance Web Developer vs Agency: Which Should You Choose?</h3>
+          <p>Cost, speed, and quality — an honest comparison.</p>
+        </div>
+      </a>
+      <a href="blog/telegram-bot-business.html" class="blog-card">
+        <div class="blog-thumb bt2">🤖</div>
+        <div class="blog-body">
+          <div class="blog-cat">Telegram Bots</div>
+          <h3>Why Every Business Needs a Telegram Bot in 2025</h3>
+          <p>Automate support, sales, and operations via Telegram.</p>
+        </div>
+      </a>
+      <a href="blog/telegram-crypto-trading-bot.html" class="blog-card">
+        <div class="blog-thumb bt1">📈</div>
+        <div class="blog-body">
+          <div class="blog-cat">Telegram Bots</div>
+          <h3>How to Build a Telegram Crypto Trading Bot in 2025</h3>
+          <p>How they work, tech stack, and what it costs.</p>
+        </div>
+      </a>
+      <a href="blog/what-is-full-stack-web-developer.html" class="blog-card">
+        <div class="blog-thumb bt5">🔷</div>
+        <div class="blog-body">
+          <div class="blog-cat">Web Dev</div>
+          <h3>What Is a Full Stack Web Developer and Why It Matters</h3>
+          <p>Frontend vs backend vs full stack — explained simply.</p>
+        </div>
+      </a>
+      <a href="blog/ai-website-features.html" class="blog-card">
+        <div class="blog-thumb bt3">🧠</div>
+        <div class="blog-body">
+          <div class="blog-cat">AI</div>
+          <h3>5 AI Features You Can Add to Your Website Right Now</h3>
+          <p>Practical integrations without massive budgets.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg2">
+    <div class="cta-box">
+      <h2>Ready to Build Something?<br>Let's Talk.</h2>
+      <p>Hire a freelance web developer who actually delivers. Free consultation — quote within 24 hours.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/923208757582?text=Hi%20Alizaib!%20I%20found%20your%20website%20and%20want%20to%20discuss%20a%20project."
+          target="_blank" class="btn-primary">💬 WhatsApp Me</a>
+        <a href="https://t.me/aziqdev" target="_blank" class="btn-secondary">✈️ Telegram</a>
+        <a href="mailto:alizaib.web.dev@gmail.com" class="btn-secondary">📧 Email Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="sec-label">// Contact</div>
+    <h2 class="sec-title">Hire Me For Your <em style="color:var(--accent);font-style:normal">Next Project</em></h2>
+    <div class="contact-grid">
+      <div>
+        <p style="color:var(--muted);margin-bottom:2rem;max-width:420px;">I respond within a few hours. Describe your
+          project — even a rough idea works. I'll ask the right questions and send you a quote within 24 hours. No
+          commitment required.</p>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-info"><strong>WhatsApp (fastest)</strong><a href="https://wa.me/923208757582"
+              target="_blank">+92 320 8757582</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✈️</div>
+          <div class="contact-info"><strong>Telegram</strong><a href="https://t.me/aziqdev" target="_blank">@aziqdev</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info"><strong>Email</strong><a
+              href="mailto:alizaib.web.dev@gmail.com">alizaib.web.dev@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⭐</div>
+          <div class="contact-info"><strong>Fiverr Profile</strong><a
+              href="https://www.fiverr.com/sellers/alizaibwebdev/" target="_blank">fiverr.com/sellers/alizaibwebdev</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-group"><label>Your Name</label><input type="text" id="f-name" placeholder="John Smith" />
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" id="f-email"
+              placeholder="john@company.com" /></div>
+          <div class="form-group">
+            <label>Project Type</label>
+            <select id="f-type">
+              <option>Telegram Bot Development</option>
+              <option>Web Development</option>
+              <option>AI Integration</option>
+              <option>Dashboard / Admin Panel</option>
+              <option>Crypto Trading Bot</option>
+              <option>Payment Integration</option>
+              <option>Hourly Work ($10/hr)</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Describe Your Project</label><textarea id="f-msg"
+              placeholder="Tell me what you need — even a rough idea is fine. I'll take it from there."></textarea>
+          </div>
+          <button class="btn-submit" onclick="sendWA()">Send via WhatsApp →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">ali<span>dev</span></a>
+        <p>Full stack freelance web developer specializing in Telegram bots, web apps, AI integrations, and custom
+          dashboards. Available worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hire Me</h4>
+        <ul>
+          <li><a href="https://wa.me/923208757582" target="_blank">WhatsApp</a></li>
+          <li><a href="https://t.me/aziqdev" target="_blank">Telegram</a></li>
+          <li><a href="https://www.fiverr.com/sellers/alizaibwebdev/" target="_blank">Fiverr Profile</a></li>
+          <li><a href="https://aziqdev.com" target="_blank">aziqdev.com</a></li>
+          <li><a href="mailto:alizaib.web.dev@gmail.com">Email Me</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Alizaib · <a href="https://aliwebdeveloper.com"
+          style="color:var(--accent);text-decoration:none;">aliwebdeveloper.com</a> · Freelance Web Developer</p>
+      <div class="social-links">
+        <a href="https://wa.me/923208757582" target="_blank" class="social-link" title="WhatsApp">💬</a>
+        <a href="https://t.me/aziqdev" target="_blank" class="social-link" title="Telegram">✈️</a>
+        <a href="https://www.fiverr.com/sellers/alizaibwebdev/" target="_blank" class="social-link" title="Fiverr">⭐</a>
+        <a href="https://aziqdev.com" target="_blank" class="social-link" title="aziqdev">🤖</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+    function sendWA() {
+      var name = document.getElementById('f-name').value || 'there';
+      var type = document.getElementById('f-type').value;
+      var msg = document.getElementById('f-msg').value || '';
+      var text = encodeURIComponent('Hi Alizaib! I\'m ' + name + '.\n\nProject Type: ' + type + '\n\n' + msg);
+      window.open('https://wa.me/923208757582?text=' + text, '_blank');
+    }
+  </script>
+</body>
+
+</html>

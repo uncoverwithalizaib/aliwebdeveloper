@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aliwebdeveloper.vercel.app/sitemap.xml
